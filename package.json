@@ -7,17 +7,29 @@
     "test": "jest",
     "ios": "react-native run-ios",
     "ios5s": "react-native run-ios --simulator='iPhone 5s'",
-		"android": "react-native run-android"
+    "android": "react-native run-android",
+    "postinstall": "remotedev-debugger — hostname localhost — port 5678 — injectserver"
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
   },
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
-    "react-native": "0.57.3"
+    "react-native": "0.57.3",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.48.1",
-    "react-test-renderer": "16.6.0-alpha.8af6728"
+    "react-test-renderer": "16.6.0-alpha.8af6728",
+    "redux-logger": "^3.0.6",
+    "remote-redux-devtools": "^0.5.13",
+    "remotedev-rn-debugger": "^0.8.3"
   },
   "jest": {
     "preset": "react-native"
